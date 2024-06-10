@@ -8,7 +8,7 @@
 -- CREATE TABLE table_name ( column_name1 datatype(size) constraint, column_name2 datatype(size) constraint, ...., column_nameN datatype(size) constraint, table_constraints ;
 -- Remember to make a table name unique otherwise use IF NOT EXISTS to avoid error and there are many constriants but we will discuss them later.
 
--- query to create a simple table name stiudents inside a practice database withot any constraints
+-- query to create a simple table name stiudents inside a practice database without any constraints
 SHOW databases;
 CREATE DATABASE IF NOT EXISTS practice;
 USE practice;
