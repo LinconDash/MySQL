@@ -100,8 +100,4 @@ CREATE UNIQUE INDEX unique_phone ON Employee_Detail(Phone);
 -- Fulltext Index
 -- Descending Index
 
-
-
-
-
-
+# NOTE : Indexes are generally used for query optimizations and are generally treated as an advanced level concept in SQL , so we will see it later in advanced level also.
