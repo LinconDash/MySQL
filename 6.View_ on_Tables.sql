@@ -45,8 +45,24 @@ DROP VIEW IF EXISTS top_students;
 -- FROM courses c, contact t   
 -- WHERE c.id = t.id; 
 
+
+## SOME EXTRA POINTS IF YOU WANT TO KNOW MORE ABOUT VIEWS ##
 -- Note there are many things to do with views but this worksheet only contains some of them 
+-- Rules while creating a query using the replace syntax:
+-- 1. order of columns should be same , if new column are to be added in the view than add as a last column
+-- 2. cannot change the name of the columns 
+-- 3. cannot change the datatype of a column
+
 -- Also a point worth mentioning that there are some rules while creating the views that if a view is created on a base_table and then some new columns
 -- are added to the base_table then we cannot see it in the view because it can only capture the structure based upon which it is built. So for that reason we
 -- have to use the create or replace syntax . But if any new row is added to the base_table then the view can easily capture that.
 -- So its better to write the view and create or replace view and execute it again whenever there is a new structure changes occurs on a base_table
+
+-- While updating a view like changing the value of a cell in the table or something like this can actually gets reflected back in the base_table
+-- therefore its not at all recommended to update the view where we change the value , but this doesn't happens when a view is created from more than one table
+-- Also a view is not updatable if its created from a group by query or a query where distinct clause is used.
+-- If query contains a CTE or WITH clause then also we cannot update the views
+-- If query contains a window function then also we cannot update the views
+
+-- Views donot contibute to query performance optimizations such as indexes but there is another type of view called Materialized views 
+-- that help in that which we will see later on.
