@@ -6,7 +6,7 @@
 -- in the View also.
 
 ## CREATE A VIEW ##
--- a view can be created using the create view command , we can also use replace to avoid update that view if created already
+-- A view can be created using the create view command , we can also use replace to avoid update that view if created already
 -- query to create a view from students table for only top students
 CREATE OR REPLACE VIEW top_students AS
 SELECT * 
@@ -45,8 +45,8 @@ DROP VIEW IF EXISTS top_students;
 -- FROM courses c, contact t   
 -- WHERE c.id = t.id; 
 
-
-
-
-
-
+-- Note there are many things to do with views but this worksheet only contains some of them 
+-- Also a point worth mentioning that there are some rules while creating the views that if a view is created on a base_table and then some new columns
+-- are added to the base_table then we cannot see it in the view because it can only capture the structure based upon which it is built. So for that reason we
+-- have to use the create or replace syntax . But if any new row is added to the base_table then the view can easily capture that.
+-- So its better to write the view and create or replace view and execute it again whenever there is a new structure changes occurs on a base_table
