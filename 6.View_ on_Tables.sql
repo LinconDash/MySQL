@@ -65,4 +65,4 @@ DROP VIEW IF EXISTS top_students;
 -- If query contains a window function then also we cannot update the views
 
 -- Views donot contibute to query performance optimizations such as indexes but there is another type of view called Materialized views 
--- that help in that which we will see later on.
+-- that help in that which we will not be able to see because in MySQL materialized views are not supported. 
