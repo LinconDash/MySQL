@@ -9,7 +9,7 @@
 -- 2. Declare variables and conditions.
 -- 3. Open the declared cursor using the OPEN Statement.
 -- 4. Retrieve the desired records from a table using the FETCH Statement.
--- 5. Finally close the cursor using the CLOSEstatement.
+-- 5. Finally close the cursor using the CLOSE statement.
 
 -- A cursor in stored procedure or function is used to iterate through the result set obtained from the SELECT statement and process each row accordingly.
 -- This is useful when you need to perform operations on each row of a result set individually, such as calculations, conditional logic, or executing statements

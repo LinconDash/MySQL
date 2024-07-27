@@ -11,6 +11,7 @@
 # Types of Triggers
 -- 1. BEFORE Trigger: Executes before an insert, update, or delete operation.
 -- 2. AFTER Trigger: Executes after an insert, update, or delete operation.
+
 # The combinations of them form a total of 6 types of triggers 
 -- 1. BEFORE UPDATE
 -- 2. AFTER UPDATE

@@ -64,7 +64,7 @@ select square(5) as result;
 delimiter //
 create function get_fullname(first_name varchar(50), last_name varchar(50))
 returns varchar(100)
-deterministic
+reads sql data
 begin
 	return concat(first_name, " ", last_name);
 end //
