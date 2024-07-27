@@ -6,7 +6,7 @@
 --    by granting him access to the view only and not any tables in the database
 -- 3. Avoid rewriting the complex sql queries multiple times
 
-# But since we know views cannot contrbute to query performance optimizations so we need something. That something is nothing but materialzed view
+# But since we know views cannot contribute to query performance optimizations so we need something. That something is nothing but materialzed view
 
 ## MATERIALIZED VIEWS ##
 -- Its a database object that is created over an sql query silimar to views and then it does two things
@@ -60,7 +60,7 @@ from random_numbers;
 
 # Now this query takes almost 1 second to run 
 # But a materialized view will only take 0.1 msec to run this 
-# Unfortunately we donot have anything like materialized view to perform this but its written below
+# Unfortunately we donot have anything like materialized view in MySQL to perform this but its written as below
 /*
 create materialized view random_query as 
 select *,

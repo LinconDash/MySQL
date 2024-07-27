@@ -98,7 +98,7 @@ case
 	when x.n = 1 then "High Salary"
     when x.n = 2 then "Moderate Salary"
     when x.n = 3 then "Less Salary"
-end as employee_designation
+end as salary_designation
 from (
 	select *,
 	ntile(3) over(partition by department order by salary desc) as n

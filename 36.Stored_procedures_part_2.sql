@@ -2,7 +2,7 @@
 select * from employees;
 
 # Procedure with different DML statements #
--- Generally DML statements are used in a stored procedure to perform multiple data manipulation task just by calling the function
+-- Generally DML statements are used in a stored procedure to perform multiple data manipulation task just by calling the procedure
 -- We have seen already about select statement , so lets see UPDATE, DELETE, INSERT
 -- Ex : Increment the salary of the specified employee by specified percentage 
 DELIMITER //
