@@ -105,7 +105,7 @@ Here are some additional resources to help you on your MySQL learning journey:
 - [Leetcode SQL-50](https://leetcode.com/studyplan/top-sql-50/)
 
 ## License
-This repository is licensed under the GNU Public License. You are free to use, modify, and distribute this resource, as long as you give appropriate credit to the contributors.
+This repository is licensed under the General Public License. You are free to use, modify, and distribute this resource, as long as you give appropriate credit to the contributors.
 
 ## Happy Learning! 🎉
 Feel free to explore, experiment, and make the most out of this free and structured MySQL learning resource.
